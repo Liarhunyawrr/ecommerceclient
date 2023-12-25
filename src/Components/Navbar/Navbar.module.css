@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
+.nav {
+  background-color: #dfd3c3de;
+  border-end-end-radius: 12px;
+  border-bottom-left-radius: 12px;
+  transition: all 0.7s ease-out;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.nav h1 {
+  font-family: "Exo 2", sans-serif;
+}
+.nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+.fixed {
+  height: 80px;
+}
+.nav a {
+  color: #422800;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav a:hover {
+  text-decoration: line-through;
+}
+.icon {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+.nav.active {
+  top: 0%;
+  transition: all 0.7s ease-out;
+}
+.icon i {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.log {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  border-end-end-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  background-color: #dfd3c3de;
+  width: 100%;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    margin: 2rem 0px;
+    gap: 15px;
+  }
+
+  .icon,
+  .log {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    top: -59%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

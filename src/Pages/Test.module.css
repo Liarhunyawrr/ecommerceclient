@@ -1,0 +1,10 @@
+.borred{
+    border: 2px solid red;
+  }
+.borred img{
+  max-width: 300px;
+}
+.res {
+  display: inline;
+
+}

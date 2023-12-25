@@ -1,0 +1,87 @@
+.circ {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.dets {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.circ img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.cart {
+  display: flex;
+  position: relative;
+  border: 1px solid brown;
+  border-radius: 18px;
+}
+.del {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: black;
+  justify-content: center;
+}
+.del i {
+  border-radius: 8px;
+  border: 1px solid;
+}
+.dets {
+  width: 100%;
+}
+.del2 {
+  border: 1px solid;
+
+  left: 88%;
+  font-size: 1.4rem;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+.tit {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-size: smaller;
+  max-width: 80%;
+}
+.emp {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .dets {
+    flex-direction: column;
+    align-items: start;
+    gap: 3px;
+  }
+  .cart {
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .cart {
+    align-items: center;
+    flex-direction: column;
+  }
+  .del {
+    display: none;
+  }
+  .del2 {
+    display: block;
+  }
+}

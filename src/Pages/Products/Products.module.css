@@ -1,0 +1,105 @@
+.filter {
+  position: absolute;
+  top: 76%;
+  border-radius: 18px;
+  transition: 1s ease-in-out;
+  scale: 0;
+  transition: 1s ease-in-out;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+
+  background-color: rgb(191, 201, 187);
+  z-index: 2;
+}
+.icon i {
+  border-radius: 8px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.filter.active {
+  height: 220px;
+  scale: 1;
+  width: 250px;
+}
+.inp label,
+input {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.icon {
+  position: relative;
+}
+.box {
+  display: flex;
+  border-radius: 18px;
+  
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow: rgb(38, 57, 77) 0px 10px 20px -17px;
+  width: 23vw;
+}
+.box:hover .img img{
+  scale: 1.02;
+}
+
+.box .img img {
+  transition:scale ease-out .2s;
+  
+  height: 100%;
+  border-radius: 18px;
+  width: 100%;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+}
+.cont h6 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.tprice {
+  font-size: small !important;
+  margin-top: 4px;
+}
+.products {
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.load{
+
+display: flex;
+justify-content: center ;
+}
+@media (max-width: 768px) {
+  .filter.active {
+    height: 220px;
+    width: 200px;
+  }
+  .box {
+    width: 40vw;
+  }
+}
+@media (max-width: 550px) {
+  .box {
+    width: 44vw;
+  }
+  .products {
+    gap: 2px;
+  }
+}
+@media (max-width: 435px) {
+  .box {
+    width: 78vw;
+  }
+  .products {
+    gap: 2px;
+  }
+}
+@media (max-width: 435px){
+  .box{
+    width: 84vw;
+  }
+}

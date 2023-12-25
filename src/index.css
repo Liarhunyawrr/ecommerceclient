@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+ 
+.para-font{
+  font-family: 'Roboto', sans-serif;
+  color: #422800cb;
+
+}
+
+.heading-font{
+  font-family: 'Exo 2', sans-serif;
+}
+body {
+  background-color: #dfd3c3be;
+  min-height: 100vh;
+  color: #422800;
+}
+.button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800a9 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #422800;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.shadow {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.red{
+  border: 2px solid red;
+}
